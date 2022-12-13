@@ -1,1 +1,10 @@
-
+spring:
+  profiles:
+    active: dev
+cloud:
+  aws:
+    stack:
+      auto: false
+rds:
+  identifier: ${RDS_IDENTIFIER}
+  password: ${RDS_PASSWORD}
